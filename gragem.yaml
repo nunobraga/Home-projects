@@ -1,0 +1,39 @@
+esphomeyaml:
+  name: gragem
+  platform: ESP8266
+  board: nodemcu
+
+wifi:
+  ssid: 'NJ'
+  password: 'casadorex'
+
+
+
+mqtt:
+  broker: '192.168.1.158'
+  username: 'nuno'
+  password: 'braga'
+
+
+
+
+ota:
+  password: 'garagem'
+
+
+
+# Example configuration entry
+sensor:
+  - platform: ultrasonic
+    trigger_pin: D1
+    echo_pin: D2
+    name: "Ultrasonic Sensor"
+    # update_interval: 1s
+    # timeout_meter: 2.5
+    # timeouest_time: 2000us
+
+logger:
+  level: VERY_VERBOSE
+
+web_server:
+  port: 80
