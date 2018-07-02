@@ -4,8 +4,9 @@ esphomeyaml:
   board: nodemcu
 
 wifi:
-  ssid: 'NJ'
-  password: 'casadorex'
+  ssid: !secret wifiSSID
+  password: !secret wifipass
+
 
 mqtt:
   broker: !secret mqtttbrokerIP
