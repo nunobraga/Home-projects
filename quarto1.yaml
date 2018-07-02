@@ -5,12 +5,12 @@ esphomeyaml:
 
 wifi:
   ssid: 'NJ'
-  password: 'casadorex'
+  password: '*******'
 
 mqtt:
   broker: '192.168.1.158'
-  username: 'nuno'
-  password: 'braga'
+  username: '****'
+  password: '****'
 
 # Enable logging
 logger:

@@ -1,24 +1,30 @@
+
+# !include secrets.yaml
+
+
+
+
 esphomeyaml:
   name: gragem
   platform: ESP8266
   board: nodemcu
 
 wifi:
-  ssid: 'NJ'
-  password: '******'
+  ssid: !secret wifiSSID
+  password: !secret wifipass
 
 
 
 mqtt:
-  broker: '192.168.1.158'
-  username: '*****'
-  password: '*****'
+  broker: !secret mqtttbrokerIP
+  username: !secret mqttusername
+  password: !secret mqttpassword
 
 
 
 
 ota:
-  password: 'garagem'
+  password: !secret OTAgaragem
 
 
 
