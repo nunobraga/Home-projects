@@ -1,0 +1,31 @@
+esphomeyaml:
+  name: quarto
+  platform: ESP8266
+  board: nodemcu
+
+wifi:
+  ssid: 'NJ'
+  password: 'casadorex'
+
+mqtt:
+  broker: '192.168.1.158'
+  username: 'nuno'
+  password: 'braga'
+
+# Enable logging
+logger:
+
+ota:
+  password: 'nuno'
+
+
+
+
+# Example configuration entry
+sensor:
+  - platform: dht12
+    temperature:
+      name: "Living Room Temperature"
+    humidity:
+      name: "Living Room Humidity"
+    update_interval: 15s
