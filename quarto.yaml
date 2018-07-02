@@ -8,15 +8,14 @@ wifi:
   password: 'casadorex'
 
 mqtt:
-  broker: '192.168.1.158'
-  username: 'nuno'
-  password: 'braga'
-
+  broker: !secret mqtttbrokerIP
+  username: !secret mqttusername
+  password: !secret mqttpassword
 # Enable logging
 logger:
 
 ota:
-  password: 'nuno'
+  password: !secret OTAquarto
 
 
 
